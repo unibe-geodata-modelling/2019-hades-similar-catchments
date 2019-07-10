@@ -17,11 +17,11 @@ data_200 = pd.read_csv("/Users/eileenschilliger/Documents/Studium/01_Geografie/M
 #print(quantile['mH_04'])
 
 
-#ID auswählen und gesuchte Variable extrahieren
+#ID auswählen        und gesuchte Spalte der ID extrahieren
 featureID = int(input("Choose your feature ID: "))
 print("You choose the id" + " " + str(featureID))
-chosenID = data_200.loc[data_200.id==featureID, 'mH_04']
-print("The middle high of your chosen id is " + str(chosenID))
+#chosenID = data_200.loc[data_200.id==featureID, : ]
+#print("The middle hight of your chosen id is " + str(chosenID))
 
 ###Auswahl Quantils durch Benutzer
 quantile = int(input("Choose your quantile: "))
@@ -30,7 +30,14 @@ quantile = int(input("Choose your quantile: "))
 data_200['Quantile_rank_mH'] = pd.qcut(data_200['mH_04'], quantile, labels=False)
 print(data_200)
 
+###Zeile der ausgesuchten id extrahieren
+chosenID = data_200.loc[data_200.id==featureID, : ]
+print(chosenID)
 
+###Gib das Quantil der ausgewählten ID??? aus (der mittleren Höhe) !!!!!
+Q_mH_04 = chosenID.at[0,'Quantile_rank_mH']
+print("The middle hight of the chosen catchment is in the {} Quantile." .format(Q_mH_04))
 
-#while (chosenID != quantile):
- #   if (chosenID )
+###wähle alle IDs mit dem selben Quantil bei der mittleren Höhe aus
+mH_sameq = data_200.loc[data_200.Quantile_rank_mH==Q_mH_04, 'id']
+print(mH_sameq)
