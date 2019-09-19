@@ -8,11 +8,13 @@ This script was developed for the "Hydrological Atlas of Switzerland" (HADES) to
 
 DOCUMENT "DATA_200"
 ------------------------------------------------------------
-The document contains the individual characteristics of the catchment areas, which have a size of 200 square meters. The script is based on the data from this Excel file.
+The document contains the individual characteristics of the catchment areas, which have a size of 200 square meters. The script is based on the data from this Excel file. 
 
 
 VARIABLES
 ------------------------------------------------------------
 
 
-
+SCRIPT DESCRIPTION
+------------------------------------------------------------
+As a first step we wrote a small script for a classification of only one property. After that we tested it several times and expanded the script for classification considering multiple features. 
