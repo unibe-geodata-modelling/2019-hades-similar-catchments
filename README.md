@@ -12,5 +12,4 @@ All data for our project are taken from the database of the Hydrological Atlas o
 
 SCRIPT DESCRIPTION
 ------------------------------------------------------------
-The dataframes "pandas" and "numpy" are used in this script for analysing the data.
-As a first step we wrote a small script for a classification of only one property (middle hight). After that we tested it several times and expanded the script for classification considering multiple features. In the end, we applied the script to the properties "middle height", "slope" and "aspect".
+The data frames "pandas" and "numpy" are used in this script for analyzing the data. The script allows the user to select a catchment as well as the catchment characteristics he/she wants to compare the catchments among each other (like slope and aspect). The script works with quantiles to detect the similarity between catchments. Therefore the script also asks for a quantile-number input. The higher the chosen number the higher is the similarity between the characteristics of the chosen catchment and the catchments presented in the output list "ergebnisliste".
