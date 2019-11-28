@@ -4,7 +4,7 @@ IDENTIFICATION OF SIMILAR CATCHMENTS (HADES)
 
 INTRO
 ------------------------------------------------------------
-The main script (projectHADES_HS19_1.py) was developed for the "Hydrological Atlas of Switzerland" (HADES) to enhance the user experience on their website. This is a tool for interactive selection of similar catchments based on different catchment characteristics. The main idea is that when the user selects a catchment area, similar areas should be displayed.
+The main script (HADES_script_final.py) was developed for the "Hydrological Atlas of Switzerland" (HADES) to enhance the user experience on their website. This is a tool for interactive selection of similar catchments based on different catchment characteristics. The main idea is that when the user selects a catchment area, similar areas should be displayed.
 
 DOCUMENT "DATA_200"
 ------------------------------------------------------------
